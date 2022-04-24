@@ -82,7 +82,7 @@ def deit_small_patch16_224(pretrained=False, **kwargs):
     model.default_cfg = _cfg()
     if pretrained:
         checkpoint = torch.hub.load_state_dict_from_url(
-            url="https://drive.google.com/uc?export=download&id=1j9LMJWNf_kBk0lGpIvEW0GsRhAr7-fLL",
+            url="https://doc-0c-6s-docs.googleusercontent.com/docs/securesc/f66q9ht81o8hrpsi3j4kc44fo7pk3tal/canrkbr9lnugh04vismam5qq7hj03hvu/1650778725000/11683149913674229680/11683149913674229680/1j9LMJWNf_kBk0lGpIvEW0GsRhAr7-fLL?e=download&ax=ACxEAsYQurrREHSPUoOtu4oKPovpxotjN4xkvdD1OtWDcRhu0RnCBasvan2zZfIF5-Hbkq_1MS69Bm-LysvKVfnmBS0IqCQZyYdS4Fzp6XU5oCypV7s9EPYSbK6BzQMeVyrIhKefmjGVEAupkyQaBxCUxk48Hihu6MSAtDhSzTDfwrAa9TSAtwX6bRrBbvj0DmgP_JTmrj3O8xOug1ZaIeQPB_g3bTeBTbg84FUE0P3pIZgq6PHMEaXIBzozthLM2aeEtd8dhHV9JSmybDTCoqVQ1iUfXXPYQQsaCH5fTZ0gBEuAyVIER2jYvW_smGd0djxTp5dwZMpvjvXqaRCwvvTWZ60WmzgVzf5w1ejo3EXaqYNimEa5OVm6oKTEUP43g8_yjBpG5Xoxq5R5fwjPf_cJHPgTSz2S9T-hValXbdwmPJIsQSgVgHevfXZYb5jIbw605LYTn0X3I0mZMqQrQ2ovcY4tbkI5TZn2O3C1c59TkSwVmln_WGIBlB1j4eP4opHo1I3Zw46tSe5-2koSrDEiJjVHJclxz3BRiPXS6IT4ZXOtnh5IzWQTdfYj3LC2Vw5kIbx2594G97sQ2EqGu2PuBlkAlGlIM3WeYwjEogLEFLCVilK8VRdKSBnYRqgMNolJX0WVuhqhnfVcGPFsvNOYqu_AnK8XlGJvXQVPsvO0e8r7qgUwi7MmW3T7zxvWjgST1eMqGTey0L5f52g6uqy0RuolYljdehIGujsK5bnxMtZzFF3dXllj&authuser=0&nonce=4reqjp43qif6e&user=11683149913674229680&hash=a16r9f5gher1vnnitboat1rvlvodlp5v",
             map_location="cpu", check_hash=True
         )
         model.load_state_dict(checkpoint["model"])
