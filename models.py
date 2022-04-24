@@ -82,7 +82,7 @@ def deit_small_patch16_224(pretrained=False, **kwargs):
     model.default_cfg = _cfg()
     if pretrained:
         checkpoint = torch.hub.load_state_dict_from_url(
-            url="https://dl.fbaipublicfiles.com/deit/deit_small_patch16_224-cd65a155.pth",
+            url="https://drive.google.com/uc?export=download&id=1j9LMJWNf_kBk0lGpIvEW0GsRhAr7-fLL",
             map_location="cpu", check_hash=True
         )
         model.load_state_dict(checkpoint["model"])
